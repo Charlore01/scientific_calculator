@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+
+    <!-- animation links (animate.css) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body class="">
+
+    <main class="container  animate__animated animate__rubberBand">
+
+      <section class="top-section animate__animated animate__bounceInDown animate__delay-1s">
+        <h1 class="top-title">calc</h1>
+        <div class="theme-section">
+          <label class="theme-text" for="range">THEME</label>
+          <div class="theme-preference-section">
+            <div class="theme-numbers" aria-hidden="true">
+              <span class="theme-number" data-theme="1">1</span>
+              <span class="theme-number" data-theme="2">2</span>
+              <span class="theme-number" data-theme="3">3</span>
+            </div>
+            <input
+              class="slider-range"
+              id="range"
+              type="range"
+              min="1"
+              max="3"
+              value="1"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      <section class="screen-section  ">
+        <div class="screen-text" aria-live="polite">0</div>
+      </section>
+
+
+      <section class="keypad-section  animate__animated animate__bounceInDown animate__delay-1s">
+        <button class="calculator-key">7</button>
+        <button class="calculator-key">8</button>
+        <button class="calculator-key">9</button>
+        <button class="calculator-key special-function">DEL</button>
+
+        <button class="calculator-key">4</button>
+        <button class="calculator-key">5</button>
+        <button class="calculator-key">6</button>
+        <button class="calculator-key">&#43;</button>
+
+        <button class="calculator-key">1</button>
+        <button class="calculator-key">2</button>
+        <button class="calculator-key">3</button>
+        <button class="calculator-key">&#8722;</button>
+
+        <button class="calculator-key">.</button>
+        <button class="calculator-key">0</button>
+        <button class="calculator-key">&#247;</button>
+        <button class="calculator-key">&#215;</button>
+
+        <button class="special-key special-function">RESET</button>
+        <button class="special-key equal-key">&#61;</button>
+      </section>
+      
+      <section class="attribution ">
+        Challenge by
+        <a href="#" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="#">Charles</a>.
+      </section>
+    </main>
+  
+  </body>
+</html>
